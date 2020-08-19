@@ -9,8 +9,9 @@ import{ IVideogame } from './videogame';
 
 export class VideogameService {
   constructor(private http: HttpClient){}
+  private _url : string = 'http://localhost:8080/getAllGames';
 
   getVideogames(): Observable<IVideogame[]>{
-    return this.http.get<IVideogame[]>('http://localhost:8080/getAllGames');
+    return this.http.get<IVideogame[]>('/assets/data/videogames.json');
   }
 }

@@ -19,7 +19,7 @@ import { TableComponent } from './table'
 import { AddGameComponent } from './add-game'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [

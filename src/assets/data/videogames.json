@@ -1,0 +1,5 @@
+[
+
+  { "title": "string", "genre": "string", "publisher": "string", "release": 1990, "reviewScore": 100},
+  { "title": "Thomas", "genre": "Thomas", "publisher": "Thomas", "release": 1990, "reviewScore": 100}
+]
