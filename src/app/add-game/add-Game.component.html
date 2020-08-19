@@ -1,0 +1,9 @@
+<h1>Add game</h1>
+
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost)">
+  <input type ="text" name="title" ngModel placeholder="title"> <br><br>
+  <input type ="text" name="genre" ngModel placeholder="genre"> <br><br>
+  <input type ="text" name="publisher" ngModel placeholder="publisher"> <br><br>
+  <input type ="text" name="reviewScore" ngModel placeholder="reviewScore"> <br><br>
+  <button mat-raised-button type ="submit">submit data</button>
+</form>
