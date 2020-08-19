@@ -20,6 +20,7 @@ import { AddGameComponent } from './add-game'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
+import { BarChartComponent } from './bar-chart';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChartsModule } from 'ng2-charts';
     DataTableComponent,
     TableComponent,
     PieChartComponent,
-    AddGameComponent
+    AddGameComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
