@@ -9,17 +9,17 @@ export class AddGameComponent implements OnInit{
 
   constructor(private http: HttpClient){}
 
-    onSubmit(data){
-      console.log(this.title);
+    onSubmit(value: any){
+      console.log(value);
       this.ngOnInit();
 
 
       const game:JSON = <JSON><unknown>{
-        "title": this.title,
-        "genre": this.genre,
-        "publisher": this.publisher,
-        "release": this.release,
-        "reviewScore": this.reviewScore
+        "title": value.title,
+        "genre": value.genre,
+        "publisher": value.publisher,
+        "release": value.release,
+        "reviewScore": value.reviewScore
       }
 
       console.log(game);
