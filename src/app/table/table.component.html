@@ -1,1 +1,17 @@
-  <data-table></data-table>
+<div>
+<tr>
+    <th>Title</th>
+    <th>Genre</th>
+    <th>Publisher</th>
+    <th>Release</th>
+    <th>ReviewScore</th>
+  </tr>
+<tr *ngFor="let videogame of data; let first = first; let last = last"
+    [ngClass]="{ first: first, last: last }">
+    <td>{{videogame.title}}</td>
+    <td>{{videogame.genre}}</td>
+    <td>{{videogame.publisher}}</td>
+    <td>{{videogame.release}}</td>
+    <td>{{videogame.reviewScore}}</td>
+    </tr>
+</div>
