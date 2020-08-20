@@ -12,6 +12,6 @@ export class VideogameService {
   private _url : string = 'http://localhost:8080/getAllGames';
 
   getVideogames(): Observable<IVideogame[]>{
-    return this.http.get<IVideogame[]>('/assets/data/videogames.json');
+    return this.http.get<IVideogame[]>(this._url);
   }
 }
