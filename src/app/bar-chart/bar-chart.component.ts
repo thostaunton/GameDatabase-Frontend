@@ -17,7 +17,7 @@ export class BarChartComponent implements OnInit {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  public barChartLabels = ['Videogames'];
+  public barChartLabels = ['Videogame review scores'];
   public barChartType = 'bar';
   public barChartLegend = true;
   public barChartData = [

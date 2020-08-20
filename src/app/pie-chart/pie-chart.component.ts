@@ -11,16 +11,20 @@ import{ IVideogame } from './videogame';
   styleUrls: ['./pie-chart.component.css']
 })
 export class PieChartComponent implements OnInit {
+
+  public pieChartLabels = ['Videogames'];
   public pieChartData = [];
-  public pieChartLabels = [];
-  public pieChartReviewScore = [];
   public pieChartType = 'pie';
-  public videogames = [];
 
   constructor(private _videogameService : VideogameService){}
 
   ngOnInit() {
-    this._videogameService.getVideogames().subscribe(data => this.videogames = data);
-    console.log(this.videogames);
+
+    this._videogameService.getVideogames().subscribe(res => {
+      for (var _i = 0; _i < 20; _i++) {
+        this.pieChartLabels[_i] = res[_i].title;
+        this.pieChartData[_i] = res[_i].reviewScore;
+      }
+    });
   }
 }
