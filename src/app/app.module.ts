@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './bar-chart';
+import{ VideogameService } from './bar-chart/videogame.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { BarChartComponent } from './bar-chart';
     FormsModule,
     ChartsModule
   ],
-  providers: [],
+  providers: [VideogameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import{ VideogameService } from './videogame.service';
 import { ChartsModule } from "ng2-charts";
 import{ IVideogame } from './videogame';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'bar-chart',
@@ -12,7 +13,6 @@ import{ IVideogame } from './videogame';
 })
 
 export class BarChartComponent implements OnInit {
-  constructor() { }
   public barChartOptions = {
     scaleShowVerticalLines: false,
     responsive: true
@@ -24,6 +24,16 @@ export class BarChartComponent implements OnInit {
     {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
     {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
   ];
+
+  public data = [];
+
+  constructor(private _videogameService : VideogameService){}
+
   ngOnInit() {
+
+    this._videogameService.getVideogames().subscribe(res => {
+      let name = res[0].title;
+      console.log(name);
+    });
   }
 }

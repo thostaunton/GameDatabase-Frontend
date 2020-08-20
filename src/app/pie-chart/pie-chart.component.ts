@@ -15,13 +15,12 @@ export class PieChartComponent implements OnInit {
   public pieChartLabels = [];
   public pieChartReviewScore = [];
   public pieChartType = 'pie';
+  public videogames = [];
 
   constructor(private _videogameService : VideogameService){}
 
   ngOnInit() {
-    this._videogameService.getVideogames().subscribe(data => this.pieChartData = data);
-    this.pieChartLabels.map(data => data.titles);
-    this.pieChartReviewScore.map(data => data.reviewScore);
-
+    this._videogameService.getVideogames().subscribe(data => this.videogames = data);
+    console.log(this.videogames);
   }
 }
