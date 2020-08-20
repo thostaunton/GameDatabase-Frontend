@@ -12,7 +12,7 @@ import{ IVideogame } from './videogame';
 })
 export class PieChartComponent implements OnInit {
 
-  public pieChartLabels = ['Videogames'];
+  public pieChartLabels = [];
   public pieChartData = [];
   public pieChartType = 'pie';
 

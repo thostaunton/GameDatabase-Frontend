@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app.routing';
 import { PieChartComponent } from './pie-chart'
 import { TableComponent } from './table'
 import { AddGameComponent } from './add-game'
+import { DeleteGameComponent } from './delete-game'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
@@ -31,6 +32,7 @@ import{ VideogameService } from './bar-chart/videogame.service';
     TableComponent,
     PieChartComponent,
     AddGameComponent,
+    DeleteGameComponent,
     BarChartComponent
   ],
   imports: [

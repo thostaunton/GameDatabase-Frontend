@@ -3,6 +3,7 @@ import { PieChartComponent } from './pie-chart';
 import { BarChartComponent } from './bar-chart';
 import { TableComponent } from './table';
 import { AddGameComponent } from './add-game';
+import { DeleteGameComponent } from './delete-game';
 import { DataTableComponent } from './data-table/data-table.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
     { path: 'table', component: TableComponent },
     { path: 'data-table', component: DataTableComponent },
     { path: 'add-game', component: AddGameComponent },
+    { path: 'delete-game', component: DeleteGameComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
