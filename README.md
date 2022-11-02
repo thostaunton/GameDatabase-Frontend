@@ -1,5 +1,7 @@
 # GameDatabase-Frontend
 
+Gets database information from the GameDatabaseAPI and displays it using Chart.js for Angular
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 ## Development server
